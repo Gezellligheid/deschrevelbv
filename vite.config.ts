@@ -3,7 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import vike from "vike/plugin";
 import { defineConfig } from "vite";
 import javaScriptObfuscator from "vite-plugin-javascript-obfuscator";
-import { minify } from "vite-plugin-minify";
+import minifyPlugin from "vite-plugin-minify";
 
 export default defineConfig({
   plugins: [
@@ -11,7 +11,7 @@ export default defineConfig({
     tailwindcss(),
     vue(),
     // Minify prerendered HTML files (strips whitespace, comments, redundant attributes)
-    minify(),
+    minifyPlugin(),
     // JS obfuscation — production builds only
     javaScriptObfuscator({
       apply: "build",
