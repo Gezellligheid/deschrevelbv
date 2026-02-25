@@ -3,7 +3,13 @@
 
 @layer base {
   h1 {
-    @apply mb-4 text-4xl font-bold tracking-tight text-gray-900;
+    @apply mb-4 font-bold tracking-tight text-blue-950;
+  }
+  h2 {
+    @apply font-bold text-blue-950;
+  }
+  h3 {
+    @apply font-semibold text-blue-950;
   }
   ul {
     @apply list-disc pl-6;
@@ -15,6 +21,6 @@
     @apply mb-2 mt-2;
   }
   a {
-    @apply text-blue-600 hover:text-pink-400 visited:text-blue-900;
+    @apply transition-colors;
   }
 }

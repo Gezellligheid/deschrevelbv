@@ -7,9 +7,10 @@ import vikeVue from "vike-vue/config";
 
 export default {
   // https://vike.dev/head-tags
-  title: "My Vike App",
+  title: "Freddy Deschrevel BV – Frees- en Draaiwerk op Maat",
 
-  description: "Demo showcasing Vike",
+  description:
+    "Freddy Deschrevel BV staat voor precisiewerk met een persoonlijk karakter. Hoogwaardig frees- en draaiwerk, direct contact en onberispelijke kwaliteit.",
   extends: [vikeVue, vikePhoton],
   prerender: true,
 } as Config;
