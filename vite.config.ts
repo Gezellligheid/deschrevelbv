@@ -37,13 +37,6 @@ export default defineConfig({
   ],
   build: {
     minify: "esbuild",
-    // Better CSS minification: removes whitespace, merges rules, shortens values
     cssMinify: "lightningcss",
-    rollupOptions: {
-      output: {
-        chunkFileNames: "assets/[hash].js",
-        entryFileNames: "assets/[hash].js",
-      },
-    },
   },
 });
